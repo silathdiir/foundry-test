@@ -13,6 +13,3 @@ line_length = 80
 
 [rpc_endpoints]
 local = "http://localhost:8545"
-
-[deploy]
-script_path = "scripts/deploy"
