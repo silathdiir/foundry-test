@@ -7,4 +7,4 @@ clean   :; forge clean
 fmt     :; forge fmt
 
 deploy_simple:
-	forge script script/DeploySimple.s.sol --broadcast --rpc-url http://localhost:8545 --private-key ${DEFAULT_ANVIL_PRIVATE_KEY}
+	forge script DeploySimple --broadcast --rpc-url http://localhost:8545 --private-key ${DEFAULT_ANVIL_PRIVATE_KEY}
