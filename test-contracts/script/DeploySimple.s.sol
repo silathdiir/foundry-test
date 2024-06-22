@@ -19,9 +19,7 @@ contract DeploySimple is Script {
         address addr;
         assembly {
             addr := create2(0, add(bytecode, 0x20), mload(bytecode), salt)
-            if iszero(extcodesize(addr)) {
-                revert(0, 0)
-            }
+            if iszero(extcodesize(addr)) { revert(0, 0) }
         }
 
         vm.stopBroadcast();
